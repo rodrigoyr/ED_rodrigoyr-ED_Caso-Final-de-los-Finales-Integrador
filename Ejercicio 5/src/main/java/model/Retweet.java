@@ -1,9 +1,11 @@
 package model;
 
+import exceptions.TweetTooLongException;
+
 public class Retweet extends Tweet {
     private Tweet originalTweet;
 
-    public Retweet(UserAccount sender, String message, Tweet originalTweet) {
+    public Retweet(UserAccount sender, String message, Tweet originalTweet) throws TweetTooLongException {
         super(sender, message);
         this.originalTweet = originalTweet;
     }
@@ -16,9 +18,9 @@ public class Retweet extends Tweet {
     public String toString() {
         return "Retweet{" +
                 "originalTweet=" + originalTweet +
-                ", sender=" + sender +
-                ", message='" + message + '\'' +
-                ", time=" + time +
+                ", sender=" + getSender() +
+                ", message='" + getMessage() + '\'' +
+                ", time=" + getTime() +
                 '}';
     }
 }

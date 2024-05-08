@@ -18,6 +18,18 @@ public class Tweet {
         this.time = LocalDate.now();
     }
 
+    public UserAccount getSender() {
+        return sender;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public LocalDate getTime() {
+        return time;
+    }
+
     @Override
     public String toString() {
         return "Tweet{" +
