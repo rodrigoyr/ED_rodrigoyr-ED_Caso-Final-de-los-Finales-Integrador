@@ -84,5 +84,31 @@ Por lo tanto, A será más eficiente que B para valores de n mayores que 8.*
 ## Ejercicio 3: Dado el siguiente algoritmo recursivo:
 ### Preguntas:
 ### a) ¿Qué imprime el código? En caso de que no compile indique el motivo y arregle el programacomo considere conveniente. Explique su solución de manera concisa.
-
+*El código imprime:
+Exception in thread "main" java.lang.StackOverflowError
+	at Main.recursive(Main.java:18)
+	at Main.recursive(Main.java:18)
+	at Main.recursive(Main.java:18)
+               ...  
+El error java.lang.StackOverflowError es causado por una recursión infinita en el método recursive. El método recursive se llama a sí mismo indefinidamente cuando el segundo argumento b es negativo. El segundo argumento es -2, esto lo que provoca es la recursión infinita. La recursión infinita llena la pila de llamadas, lo que finalmente resulta en StackOverflowError.  Para solucionar este problema, puedes agregar una condición en tu método recursive para manejar los casos en los que b es negativo. Adjunto el código con el quw corrijo este problema, aunque también puede verlo desde la carpeta Ejercicio 3, en la clase MainCorregido*
+import java.util.*;*
+*public class MainCorregido {*
+    *public static void main(String[] args) {*
+        *int a = recursive(1, -2);
+        *System.out.println(a);*
+    *}*
+    *public static int recursive(int a, int b) {*
+        *if (b == 0)*
+        *{*
+            *return 1;*
+        *}*
+        *else if (a == 0 || b < 0)*
+        *{*
+            *return 0;*
+        *}*
+        *else*
+            *return a * recursive(a, b - 1);*
+        *}*
+    *}*
+*}*
 ### b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
