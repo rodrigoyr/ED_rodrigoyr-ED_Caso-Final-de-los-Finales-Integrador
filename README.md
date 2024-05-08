@@ -1,5 +1,6 @@
 # ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador
-
+https://github.com/rodrigoyr/ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador.git
+**A continuación resulevo los ejercicios proporcionados. Los ejercicios de texto (1 y 2) están completamente resueltos en este README. Sin embargo, los ejercicios de resolución de código (3, 4 y 5) están resueltos parcialmente aquí, la parte de texto, mientras que la parte de código la pueden encontrar resuelta en sus carpetas correspondientes. Además, adjunto imágenes en los ejercicios 3 y 4 para una mayor facilidad de corrección.**
 ## Ejercicio 1
 ### 1) En relación al estado de un objeto, para preservar el principio de encapsulación: ###
 *b)    Debemos establecer la visibilidad más restrictiva (por ejemplo, privada) en los atributos de una clase. Así, cualquier software que utilice nuestro objeto, sólo accederá al estado de los objetos mediante los métodos que le hayamos permitido utilizar.*
