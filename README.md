@@ -82,3 +82,43 @@ Tomamos la raíz cuadrada de ambos lados :
 Por lo tanto, A será más eficiente que B para valores de n mayores que 8.*
 
 ## Ejercicio 3: Dado el siguiente algoritmo recursivo:
+### Preguntas:
+### a) ¿Qué imprime el código? En caso de que no compile indique el motivo y arregle el programacomo considere conveniente. Explique su solución de manera concisa.
+*El código imprime:
+Exception in thread "main" java.lang.StackOverflowError
+	at Main.recursive(Main.java:18)
+	at Main.recursive(Main.java:18)
+	at Main.recursive(Main.java:18)
+               ...  
+El error java.lang.StackOverflowError es causado por una recursión infinita en el método recursive. El método recursive se llama a sí mismo indefinidamente cuando el segundo argumento b es negativo. El segundo argumento es -2, esto lo que provoca es la recursión infinita. La recursión infinita llena la pila de llamadas, lo que finalmente resulta en StackOverflowError.  Para solucionar este problema, puedes agregar una condición en tu método recursive para manejar los casos en los que b es negativo. En la carpeta "Ejercicio 3" puede observar el código principal en la clase Main, y, en la clase MainCorregido, el código solucionando el error descrito*
+*He solucionado el erro añadiendo una condicion en el metodo recursive para manejar cuando b es negativo*
+public static int recursive(int a, int b) {
+    if (b == 0)
+    {
+        return 1;
+    }
+    else if (a == 0 || b < 0)
+    {
+        return 0;
+    }
+    else{
+        return a * recursive(a, b - 1);
+    }
+}
+
+### b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
+*El método recursive está implementando una forma de recursividad lineal para calcular la potencia de un número. Es decir, está calculando a elevado a la potencia de b (a^b).
+La recursividad lineal ocurre cuando una función se llama a sí misma y no hay bucles.*
+El cálculo se realiza así:
+*1. Si b es 0, el método retorna 1, ya que cualquier numero elevado 0 es 1.
+2. Si a es 0 o b es negativo, el método devuelve 0. En el caso de a siendo 0, cualquier 0 elevado a cualquier número es 0. En el caso de b siendo negativo, se ha añadido esta condición para evitar la recursión infinita, que es el problema que hemos visto
+3. Si ninguna de las condiciones anteriores se cumple, el método se llama a sí mismo con b disminuido en 1, y multiplica el resultado por a. Esto es la parte recursiva del método que calcula la potencia.*
+
+## Ejercicio 4
+### Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 -> 1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la resolución
+### ¿ Qué tipo de recursividad se está empleando? ¿ Qué complejidad computacional t iene el algoritmo?
+*El tipo de recursividad que se está empleando es la recursividad lineal. En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  La complejidad computacional del algoritmo es O(n), n es el número de dígitos del número de entrada. Esto se debe a que la función se llama a sí misma una vez por cada dígito del número. En cada llamada, se realiza una cantidad constante de trabajo (dividir el número por 10 y sumar el dígito restante), por lo que el tiempo total es proporcional al número de digitos. Pienso que es la mejor manera de conseguir la solucion de este ejercicio*
+
+## Ejercicio 5
+*Puede encontrarlo en la carpeta Ejercicio 5*
+*Este trabajo me ha llevado alrededor de 1h:15min completarlo, pienso que ha sifo bastante complicado y exigente debido al tiempo del que disponiamos y de la presion que este caso final ejercia. En general estoy bastante contento con este ultimo ejercicio, como puede observar he conseguido resolver las diferentes clases que he creado e intsnciar e importar unas en otras para poder hacer uso de sus funcionalidades en otras clase. Finalmente el problema real llega a la hora de crear la interfaz de usuario de la clase Main, ya que tengo todos los metodos y funciones conseguidos pero no llego a la solucion de poder impmentarlos en la interfax de suaurio gráfica, al final algunos de ellos he consegido implmentarlos, como puede observar en las diferentes clases y módulos, todo el programa está conseguido, aunque la parte final del usuario se me ha complicado un poco: Repito, en general estoy bastante contento con este ejercicio/programa ya que teniendo en cuenta el tiempo que teníamos, además de haber realizado otros 4 ejercicios seguidos, he conseguido sacar adeante de la mejor manera este proyecto, me quedo con las ganas de haber podido implmentar todas las funciones y métodod creados en la intreracción con el usuario, ya que a mi parecer, es lo más importante. Muchas gracias.*
