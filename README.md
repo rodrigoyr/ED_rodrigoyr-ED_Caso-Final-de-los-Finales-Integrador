@@ -1,7 +1,7 @@
 # ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador
 
 ### Ejercicio 1
-*1)     En relación al estado de un objeto, para preservar el principio de encapsulación:*
+_1)     En relación al estado de un objeto, para preservar el principio de encapsulación:_
 
 a)    Los atributos de nuestra clase deben permanecer públicos, para permitir un acceso total a la información que almacenamos en los objetos. Sin embargo, aquellos métodos que realicen operaciones internas (y no deban ser utilizados), deben establecerse como privados.
 
@@ -30,3 +30,5 @@ b)    O(1)
 a)    Verdadero
 
 b)    Falso
+### Ejercicio 2
+
