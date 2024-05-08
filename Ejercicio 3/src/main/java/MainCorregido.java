@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class Main {
+public class MainCorregido {
     public static void main(String[] args) {
         int a = recursive(1, -2);
         System.out.println(a);
@@ -10,7 +10,7 @@ public class Main {
         {
             return 1;
         }
-        else if (a == 0)
+        else if (a == 0 || b < 0)
         {
             return 0;
         }
