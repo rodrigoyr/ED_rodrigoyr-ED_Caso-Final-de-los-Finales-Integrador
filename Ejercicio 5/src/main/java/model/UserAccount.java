@@ -45,6 +45,14 @@ public class UserAccount {
         }
     }
 
+    public String getAlias() {
+        return this.alias;
+    }
+
+    public List<Tweet> getTimeline() {
+        return this.timeline;
+    }
+
     @Override
     public String toString() {
         return "UserAccount{" +
