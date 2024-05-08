@@ -92,19 +92,7 @@ Exception in thread "main" java.lang.StackOverflowError
                ...  
 El error java.lang.StackOverflowError es causado por una recursión infinita en el método recursive. El método recursive se llama a sí mismo indefinidamente cuando el segundo argumento b es negativo. El segundo argumento es -2, esto lo que provoca es la recursión infinita. La recursión infinita llena la pila de llamadas, lo que finalmente resulta en StackOverflowError.  Para solucionar este problema, puedes agregar una condición en tu método recursive para manejar los casos en los que b es negativo. En la carpeta "Ejercicio 3" puede observar el código principal en la clase Main, y, en la clase MainCorregido, el código solucionando el error descrito*
 *He solucionado el erro añadiendo una condicion en el metodo recursive para manejar cuando b es negativo*
-public static int recursive(int a, int b) {
-    if (b == 0)
-    {
-        return 1;
-    }
-    else if (a == 0 || b < 0)
-    {
-        return 0;
-    }
-    else{
-        return a * recursive(a, b - 1);
-    }
-}
+![image](https://github.com/rodrigoyr/ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador/assets/146821758/374cfb08-79ad-49bc-977c-dccd6a2cb15a)
 
 ### b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
 *El método recursive está implementando una forma de recursividad lineal para calcular la potencia de un número. Es decir, está calculando a elevado a la potencia de b (a^b).
@@ -117,8 +105,9 @@ El cálculo se realiza así:
 ## Ejercicio 4
 ### Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 -> 1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la resolución
 ### ¿ Qué tipo de recursividad se está empleando? ¿ Qué complejidad computacional t iene el algoritmo?
-*El tipo de recursividad que se está empleando es la recursividad lineal. En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  La complejidad computacional del algoritmo es O(n), n es el número de dígitos del número de entrada. Esto se debe a que la función se llama a sí misma una vez por cada dígito del número. En cada llamada, se realiza una cantidad constante de trabajo (dividir el número por 10 y sumar el dígito restante), por lo que el tiempo total es proporcional al número de digitos. Pienso que es la mejor manera de conseguir la solucion de este ejercicio*
+*El tipo de recursividad que se está empleando es la recursividad lineal. En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  La complejidad computacional del algoritmo es O(n), n es el número de dígitos del número de entrada. Esto se debe a que la función se llama a sí misma una vez por cada dígito del número. En cada llamada, se realiza una cantidad constante de trabajo (dividir el número por 10 y sumar el dígito restante), por lo que el tiempo total es proporcional al número de digitos. Pienso que es la mejor manera de conseguir la solucion de este ejercicio. Puede encontrar el ejercicio en la carpeta Ejercicio 4*
+![image](https://github.com/rodrigoyr/ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador/assets/146821758/99e2f838-8f0f-43d6-98a2-a94624d01486)
 
 ## Ejercicio 5
-*Puede encontrarlo en la carpeta Ejercicio 5*
-*Este trabajo me ha llevado alrededor de 1h:15min completarlo, pienso que ha sifo bastante complicado y exigente debido al tiempo del que disponiamos y de la presion que este caso final ejercia. En general estoy bastante contento con este ultimo ejercicio, como puede observar he conseguido resolver las diferentes clases que he creado e intsnciar e importar unas en otras para poder hacer uso de sus funcionalidades en otras clase. Finalmente el problema real llega a la hora de crear la interfaz de usuario de la clase Main, ya que tengo todos los metodos y funciones conseguidos pero no llego a la solucion de poder impmentarlos en la interfax de suaurio gráfica, al final algunos de ellos he consegido implmentarlos, como puede observar en las diferentes clases y módulos, todo el programa está conseguido, aunque la parte final del usuario se me ha complicado un poco: Repito, en general estoy bastante contento con este ejercicio/programa ya que teniendo en cuenta el tiempo que teníamos, además de haber realizado otros 4 ejercicios seguidos, he conseguido sacar adeante de la mejor manera este proyecto, me quedo con las ganas de haber podido implmentar todas las funciones y métodod creados en la intreracción con el usuario, ya que a mi parecer, es lo más importante. Muchas gracias.*
+*Puede encontrar el ejercicio completo en la carpeta Ejercicio 5*
+*Este trabajo me ha llevado alrededor de 1h:15min completarlo, pienso que ha sifo bastante complicado y exigente debido al tiempo del que disponiamos y de la presion que este caso final ejercia. En general estoy bastante contento con este ultimo ejercicio, como puede observar he conseguido resolver las diferentes clases que he creado e intsnciar e importar unas en otras para poder hacer uso de sus funcionalidades en otras clase. Finalmente el problema real llega a la hora de crear la interfaz de usuario de la clase Main, ya que tengo todos los metodos y funciones conseguidos pero no llego a la solucion de poder impmentarlos en la interfax de suaurio gráfica, al final algunos de ellos he consegido implmentarlos, como puede observar en las diferentes clases y módulos, todo el programa está conseguido, aunque la parte final del usuario se me ha complicado un poco: Repito, en general estoy bastante contento con este ejercicio/programa ya que teniendo en cuenta el tiempo que teníamos, además de haber realizado otros 4 ejercicios seguidos, he conseguido sacar adeante de la mejor manera este proyecto con los recursos que tenía, me quedo con las ganas de haber podido implmentar todas las funciones y métodod creados en la intreracción con el usuario, ya que a mi parecer, es lo más importante. Seguraente con algo más de margen podría haber mejorado la interfaz de usuario como pide el enunciado y añadir a la interacción con el usuario los métodod y funciones que faltan. Espero pueda tener en consideración estos factores. Muchas gracias.*
