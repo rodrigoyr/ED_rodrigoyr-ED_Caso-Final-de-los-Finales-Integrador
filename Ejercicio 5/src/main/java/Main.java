@@ -1,12 +1,11 @@
-
 import model.*;
 import exceptions.*;
 
 public class Main {
     public static void main(String[] args) {
         try {
-            UserAccount sender = new UserAccount("Sender");
-            UserAccount recipient = new UserAccount("Recipient");
+            UserAccount sender = new UserAccount("Sender", "sender@example.com");
+            UserAccount recipient = new UserAccount("Recipient", "recipient@example.com");
 
             Tweet tweet = new Tweet(sender, "This is a tweet");
             System.out.println(tweet);
