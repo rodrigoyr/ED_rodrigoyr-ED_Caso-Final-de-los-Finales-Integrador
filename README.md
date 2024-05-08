@@ -107,3 +107,9 @@ public static int recursive(int a, int b) {
 }
 
 ### b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
+*El método recursive está implementando una forma de recursividad lineal para calcular la potencia de un número. Es decir, está calculando a elevado a la potencia de b (a^b).
+La recursividad lineal ocurre cuando una función se llama a sí misma y no hay bucles.*
+El cálculo se realiza así:
+*1. Si b es 0, el método retorna 1, ya que cualquier numero elevado 0 es 1.
+2. Si a es 0 o b es negativo, el método devuelve 0. En el caso de a siendo 0, cualquier 0 elevado a cualquier número es 0. En el caso de b siendo negativo, se ha añadido esta condición para evitar la recursión infinita, que es el problema que hemos visto
+3. Si ninguna de las condiciones anteriores se cumple, el método se llama a sí mismo con b disminuido en 1, y multiplica el resultado por a. Esto es la parte recursiva del método que calcula la potencia.*
