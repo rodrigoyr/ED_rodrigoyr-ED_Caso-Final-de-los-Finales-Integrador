@@ -17,12 +17,7 @@
 *a)    Verdadero*
 
 ### Ejercicio 2
-
-**1)     Debemos diseñar un programa para un s i stema de dispositivos portables aplicados  en  telemedicina  que  contienen  una  cantidad  de  memoria  muy l imitada ( 4 KB). Tenemos diferentes alternativ as que hacen diferente uso de la computación y la memoria.
-a)    La primera de ellas t iene un orden de complejidad computacional O( n) y va a ocupar un espacio S( 1 ).
-b)    La segunda de ellas t iene un orden de complejidad computacional O( 1 ) pero lo hace mediante una técnica denominada para guardar muchos datos en memoria, por lo que ocupa un espacio de S( N 2 ).
-c)     La tercera y última t iene una complejidad computacional de O( log 2 ( N)) y ocupa un poco más de espacio en memoria S( O( log 2 ( N))).
-Debemos analizar la eficiencia computacional de las mismas y justificar la elección. Teniendo en cuenta que el programa va a tener un tamaño de datos de entrada de 64 KB.**
+*2 - 3 - 4 - 5*
 
 **2)     Explica las diferencias entre una tabla Hash y un árbol. ¿ Cuándo conviene utilizar cada una de estas estructuras? Justifique su respuesta y analice todas las posibles operaciones a realizar por las estructuras. No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.**
 *Las tablas Hash son estructura de datos que podemos usar para acceder rapidamente a datos ya que aquí las colisiones son poco frecuentes. Entre las operaciones que podemos realizar están insertar, buscat y eliminar pares clave-valor. Como he comentado entre las ventajas encontramos el rápido acceso y la búsqueda eficiente en grandes conjuntos de datos. El problema aquí lo encontramos cuando hay muchas colisiones ya que su rendiemiento disminuye.
