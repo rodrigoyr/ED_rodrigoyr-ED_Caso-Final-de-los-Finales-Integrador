@@ -113,3 +113,7 @@ El cálculo se realiza así:
 *1. Si b es 0, el método retorna 1, ya que cualquier numero elevado 0 es 1.
 2. Si a es 0 o b es negativo, el método devuelve 0. En el caso de a siendo 0, cualquier 0 elevado a cualquier número es 0. En el caso de b siendo negativo, se ha añadido esta condición para evitar la recursión infinita, que es el problema que hemos visto
 3. Si ninguna de las condiciones anteriores se cumple, el método se llama a sí mismo con b disminuido en 1, y multiplica el resultado por a. Esto es la parte recursiva del método que calcula la potencia.*
+
+## Ejercicio 4
+### Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 -> 1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la resolución
+### ¿ Qué tipo de recursividad se está empleando? ¿ Qué complejidad computacional t iene el algoritmo?
