@@ -9,7 +9,7 @@ public class Tweet {
     private String message;
     private LocalDate time;
 
-    public Tweet(UserAccount sender, String message) {
+    public Tweet(UserAccount sender, String message) throws TweetTooLongException {
         if (message.length() > 140) {
             throw new TweetTooLongException("Message is too long");
         }
