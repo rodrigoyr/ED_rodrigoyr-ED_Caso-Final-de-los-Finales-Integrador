@@ -2,6 +2,10 @@ import model.*;
 import exceptions.*;
 
 import javax.swing.*;
+import model.*;
+import exceptions.*;
+
+import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -18,15 +22,10 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(500, 500);
 
-        // Set the background image
-        JLabel background = new JLabel(new ImageIcon("path/to/twitter-logo.png"));
-        frame.setContentPane(background);
-        frame.setLayout(new FlowLayout());
-
         // Create the panel
         JPanel panel = new JPanel();
         panel.setLayout(new GridLayout(6, 1));
-        panel.setOpaque(false);  // Make the panel transparent to show the background image
+        panel.setBackground(Color.BLUE);  // Set the background color to blue
 
         // Create the buttons
         JButton createUserButton = new JButton("Create UserAccount");
