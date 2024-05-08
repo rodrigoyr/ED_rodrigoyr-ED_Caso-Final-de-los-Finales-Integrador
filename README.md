@@ -82,3 +82,7 @@ Tomamos la raíz cuadrada de ambos lados :
 Por lo tanto, A será más eficiente que B para valores de n mayores que 8.*
 
 ## Ejercicio 3: Dado el siguiente algoritmo recursivo:
+### Preguntas:
+### a) ¿Qué imprime el código? En caso de que no compile indique el motivo y arregle el programacomo considere conveniente. Explique su solución de manera concisa.
+
+### b) Explica brevemente qué cálculo está haciendo y qué tipo de recursividad está empleando.
