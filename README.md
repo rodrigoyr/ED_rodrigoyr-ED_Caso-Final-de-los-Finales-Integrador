@@ -16,7 +16,7 @@
 ### 5)     Un algoritmo de ordenación que implemente el método de inserción se basa en la idea de ir seleccionando el número correspondiente en la lista desordenada que se va a insertar en la posición última de la lista ordenada:
 *a)    Verdadero*
 
-## Ejercicio 2
+## Ejercicio 2: Responda a las cuestiones
 *Realizo los ejercicios 2 - 3 - 4 - 5*
 
 ### 2)     Explica las diferencias entre una tabla Hash y un árbol. ¿ Cuándo conviene utilizar cada una de estas estructuras? Justifique su respuesta y analice todas las posibles operaciones a realizar por las estructuras. No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.
