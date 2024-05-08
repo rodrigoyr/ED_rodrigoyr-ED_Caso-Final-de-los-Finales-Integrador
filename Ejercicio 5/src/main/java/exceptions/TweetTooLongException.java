@@ -1,4 +1,7 @@
 package exceptions;
 
-public class TweetTooLongException {
+public class TweetTooLongException extends Exception {
+    public TweetTooLongException(String message) {
+        super(message);
+    }
 }
