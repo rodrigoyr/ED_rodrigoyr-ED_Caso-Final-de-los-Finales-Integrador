@@ -80,3 +80,5 @@ Dividimos ambos lados de la desigualdad por 16:
 Tomamos la raíz cuadrada de ambos lados :
 8 < n
 Por lo tanto, A será más eficiente que B para valores de n mayores que 8.*
+
+## Ejercicio 3: Dado el siguiente algoritmo recursivo:
