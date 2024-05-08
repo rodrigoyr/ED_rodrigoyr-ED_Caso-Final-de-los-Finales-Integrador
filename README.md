@@ -17,6 +17,7 @@
 *a)    Verdadero*
 
 ## Ejercicio 2: Responda a las cuestiones
+**Se debe responder a 4 preguntas de las 5 disponibles. Las 4 preguntas a contestar son elegidas libremente por el estudiante.**
 *Realizo los ejercicios 2 - 3 - 4 - 5*
 
 ### 2)     Explica las diferencias entre una tabla Hash y un árbol. ¿ Cuándo conviene utilizar cada una de estas estructuras? Justifique su respuesta y analice todas las posibles operaciones a realizar por las estructuras. No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.
