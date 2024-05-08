@@ -1,10 +1,16 @@
 package model;
 
+import exceptions.TweetTooLongException;
+
 public class DirectMessage extends Tweet {
     private UserAccount recipient;
 
     public DirectMessage(UserAccount sender, String message, UserAccount recipient) {
-        super(sender, message);
+        try {
+            super(sender, message);
+        } catch (TweetTooLongException e) {
+            e.printStackTrace();
+        }
         this.recipient = recipient;
     }
 
@@ -16,9 +22,9 @@ public class DirectMessage extends Tweet {
     public String toString() {
         return "DirectMessage{" +
                 "recipient=" + recipient +
-                ", sender=" + sender +
-                ", message='" + message + '\'' +
-                ", time=" + time +
+                ", sender=" + getSender() +
+                ", message='" + getMessage() + '\'' +
+                ", time=" + getTime() +
                 '}';
     }
 }
