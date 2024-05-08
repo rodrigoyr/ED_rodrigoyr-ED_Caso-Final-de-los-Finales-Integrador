@@ -5,12 +5,8 @@ import exceptions.TweetTooLongException;
 public class DirectMessage extends Tweet {
     private UserAccount recipient;
 
-    public DirectMessage(UserAccount sender, String message, UserAccount recipient) {
-        try {
-            super(sender, message);
-        } catch (TweetTooLongException e) {
-            e.printStackTrace();
-        }
+    public DirectMessage(UserAccount sender, String message, UserAccount recipient) throws TweetTooLongException {
+        super(sender, message);
         this.recipient = recipient;
     }
 
