@@ -36,6 +36,37 @@ En relación al orden de complejidad computacional, para ambas el de las operaci
 
 
 **4)     Explica   el    método    de    ordenación    denominado    inserción  y describe  las i teraciones sobre el s iguiente conjunto de datos: 50 20 84 13 22 16 89 85**
+*El método de ordenación "insercion" es un metodo simple pero muy eficaz que sirve para ordenar una lista de elementos. Funciona cómo si ordenaras cartas en tu mano. Comenzamos con el segundo elemento de la lista y lo comparamos con el primero. Si el segundo elemento es menor, los intercambiamos. Luego, avanzamos al tercer elemento y lo comparamos con los anteriores, nos vamos hacia la izquierda hasta que encontramos su posición. Este proceso se repite para cada elemento hasta que todos estén correctamente*
+Para la lista: 50, 20, 84, 13, 22, 16, 89, 85.
+1. **Iteración 1:**
+   - Lista actual: 50, 20, 84, 13, 22, 16, 89, 85
+   - El 20 es menor que el 50, por lo se intercambian: 20, 50, 84, 13, 22, 16, 89, 85
+2. **Iteración 2**:
+   - Lista actual: 20, **50**, 84, 13, 22, 16, 89, 85
+   - El 84 ya está bien
+3. **Iteración 3**:
+   - Lista actual: 20, 50, 84, 13, 22, 16, 89, 85]
+   - El 13 es menor que el 84, así que hacia la izquierda: 20, 50, 13, 84, 22, 16, 89, 85
+   - Luego, el 13 es menor que el 50, por lo que va hacia la izquierda: 20, 13, 50, 84, 22, 16, 89, 85
+   - El 13 es menor que el 20, así que hacia la izquierda: 13, 20, 50, 84, 22, 16, 89, 85
+4. **Iteración 4**:
+   - Lista actual: 13, 20, 50, 84, 22, 16, 89, 85
+   - El 22 es menor que el 84, así que lo mueve hacia la izquierda: 13, 20, 50, 22, 84, 16, 89, 85
+5. **Iteración 5**:
+   - Lista actual: 13, 20, 50, 22, 84, 16, 89, 85
+   - El 16 es menor que el 84, así que lo desplaza hacia la izquierda: 13, 20, 50, 22, 16, 84, 89, 85
+   - Luego, el 16 es menor que el 50, así que se mueve a hacia la izquierda: 13, 20, 50, 16, 22, 84, 89, 85
+   - Finalmente, el 16 es menor que el 20, así que lo desplaza hacia la izquierda: 13, 16, 20, 50, 22, 84, 89, 85
+6. **Iteración 6**:
+   - Lista actual: 13, 16, 20, 50, 22, 84, 89, 85]
+   - El 22 ya está en su posicion correcta.
+7. **Iteración 7**:
+   - Lista actual: 13, 16, 20, 50, 22, 84, 89, 85
+   - El 89 ya está en su posición correcta.
+8. **Iteración 8**:
+   - Lista actual: [13, 16, 20, 50, 22, 84, **89**, **85**]
+   - El 85 ya está en su posición correcta.
+*Como vemos este metodo inserción, mediante diferentes interacions consigue ordenar la lista de menor a meyor: 13, 16, 20, 22, 50, 84, 85, 89*
 
 **5)     Dadas dos funciones y su número de operaciones:
 A = 1024 n
