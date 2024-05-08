@@ -25,26 +25,17 @@ c)     La tercera y última t iene una complejidad computacional de O( log 2 ( N
 Debemos analizar la eficiencia computacional de las mismas y justificar la elección. Teniendo en cuenta que el programa va a tener un tamaño de datos de entrada de 64 KB.**
 
 **2)     Explica las diferencias entre una tabla Hash y un árbol. ¿ Cuándo conviene utilizar cada una de estas estructuras? Justifique su respuesta y analice todas las posibles operaciones a realizar por las estructuras. No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.**
-Las tablas Hash son estructura de datos que podemos usar para acceder rapidamente a datos ya que aquí las colisiones son poco frecuentes. Entre las operaciones que podemos realizar están insertar, buscat y eliminar pares clave-valor. Como he comentado entre las ventajas encontramos el rápido acceso y la búsqueda eficiente en grandes conjuntos de datos. El problema aquí lo encontramos cuando hay muchas colisiones ya que su rendiemiento disminuye.
+*Las tablas Hash son estructura de datos que podemos usar para acceder rapidamente a datos ya que aquí las colisiones son poco frecuentes. Entre las operaciones que podemos realizar están insertar, buscat y eliminar pares clave-valor. Como he comentado entre las ventajas encontramos el rápido acceso y la búsqueda eficiente en grandes conjuntos de datos. El problema aquí lo encontramos cuando hay muchas colisiones ya que su rendiemiento disminuye.
 Un árbol, es una estructura de datos que se organiza de manera similar a la de u árbol de verdad, con esto podemos mantender los dtos ordenadas y realizar búsquedas de manera corrects. entre las operaciones que podemos rewlizar están insertar, buscar y eliminar valores de dicho árbol en general de manera rápida y precisa. Si el árbol está desequilibrado puede afectar en los tempos y la organización del mismo.
-Teniendo esto en cuenta, deberíamos usar la tabla Hash cuando lo que realmente nos importa es el tiempo, ya que aquí como henos comentado las colisiones son poco probables. Si por el contrario nos interesa más la organización y la eficiencia, las árboles son nuestra mejor opción, y aún así conseguiremos tiempos de búsqueda excelentes.
-
-Tabla Hash: Cuando la velocidad de acceso es fundamental y las colisiones son poco probables.
-Árbol: Para mantener datos ordenados y realizar búsquedas eficientes, especialmente cuando se necesita garantizar tiempos de búsqueda logarítmicos.
-Los árboles son útiles cuando se necesita mantener los datos ordenados y realizar operaciones de búsqueda eficientes. En particular, los árboles de búsqueda binaria son excelentes para este propósito, ya que garantizan tiempos de búsqueda logarítmicos en el peor de los casos. Sin embargo, el rendimiento de los árboles puede degradarse si el árbol se vuelve desequilibrado, lo que puede ocurrir en inserciones o eliminaciones frecuentes.
-
-**Cuándo utilizar cada estructura:**
-
-- **Tabla Hash:** Se suele preferir cuando el tiempo de búsqueda y acceso rápido es fundamental, especialmente para grandes conjuntos de datos donde las colisiones son poco frecuentes. Son ideales cuando la relación entre las claves y los valores no requiere un orden específico.
-  
-- **Árbol:** Es más adecuado cuando se necesita mantener los datos ordenados y se espera realizar operaciones de búsqueda frecuentes. Son útiles cuando se necesita garantizar un tiempo de búsqueda logarítmico y las operaciones de inserción y eliminación no son demasiado frecuentes.
-
-En resumen, la elección entre una tabla hash y un árbol depende de las características específicas del problema y de los requisitos de rendimiento, como la velocidad de acceso, la eficiencia de búsqueda y la necesidad de mantener los datos ordenados.
-
+Teniendo esto en cuenta, deberíamos usar la tabla Hash cuando lo que realmente nos importa es el tiempo, ya que aquí como henos comentado las colisiones son poco probables. Si por el contrario nos interesa más la organización y la eficiencia, las árboles son nuestra mejor opción, y aún así conseguiremos tiempos de búsqueda excelentes*
 
 **3)     Explica las diferencias entre un a pila y una cola. ¿ Cuándo conviene utilizar cada una de estas estructuras? ¿ Cuál es el orden de complejidad computacional de estas estructuras? No redacte el orden tal y como puede ver en los apuntes, razónelo con sus propias palabras y argumentos.**
+*Las pilas son estructuras de datos en las que la primera que entra es la primera que sale. Se utilizan normalmente para implementar operaciones, como la reversión de una lista de elementos, el seguimiento de funciones y la evaluación de expresiones. En general se utilizan cuando necesitas acceder rapidamente al ultimo elemento que has insertado y es útil cuando nevcesitas seguir un orden contrario a medida que se procesan los elementos.
+La cola es una estructura del mismo tipo, es decir, la primera que entra es la primera que sale, estas son últiles para situaciones donde el orden de llegada de los elememtos es importante, tareas etc. Aquí, en general lo vamos a utilizar cuando necesitas procesar elementos en el orden que llegaron,  y en tareas de procesamiento donde nos interesa que se procesen primero los elementos que llegaron primero.
+En relación al orden de complejidad computacional, para ambas el de las operaciones básicas que he nombrado antes suele ser O(1). Aunque, es importante tener en cuenta que dependiendo de la implementación y las operaciones que se realicen, puede haber casos donde el rendimiento cambie. Por ejemplo, si necesitas eliminar elementos en medio de la cola, puede ser más eficiente usar una estructura de datos diferente, como una lista enlazada*
 
-**4)     Explica   el    método    de    ordenación    denominado    inserción               y     describe  las i teraciones sobre el s iguiente conjunto de datos: 50 20 84 13 22 16 89 85**
+
+**4)     Explica   el    método    de    ordenación    denominado    inserción  y describe  las i teraciones sobre el s iguiente conjunto de datos: 50 20 84 13 22 16 89 85**
 
 **5)     Dadas dos funciones y su número de operaciones:
 A = 1024 n
