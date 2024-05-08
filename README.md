@@ -1,6 +1,5 @@
 # ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador
 
-## Hoja 2/17
 ### Ejercicio 1
 *1)     En relación al estado de un objeto, para preservar el principio de encapsulación:*
 
