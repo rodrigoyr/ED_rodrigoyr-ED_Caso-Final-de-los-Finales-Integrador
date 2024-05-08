@@ -118,3 +118,6 @@ El cálculo se realiza así:
 ### Calcular de forma recursiva la suma de los dígitos de un número siendo un ejemplo el número 102 -> 1 + 0 + 2 = 3. Recuerde que puede realizar los cambios de tipo que crea necesarios para facilitar la resolución
 ### ¿ Qué tipo de recursividad se está empleando? ¿ Qué complejidad computacional t iene el algoritmo?
 *El tipo de recursividad que se está empleando es la recursividad lineal. En este tipo de recursividad, la función se llama a sí misma una vez en cada paso de la recursión.  La complejidad computacional del algoritmo es O(n), n es el número de dígitos del número de entrada. Esto se debe a que la función se llama a sí misma una vez por cada dígito del número. En cada llamada, se realiza una cantidad constante de trabajo (dividir el número por 10 y sumar el dígito restante), por lo que el tiempo total es proporcional al número de digitos. Pienso que es la mejor manera de conseguir la solucion de este ejercicio*
+
+## Ejercicio 5
+*Puede encontrarlo en la carpeta Ejercicio 5*
