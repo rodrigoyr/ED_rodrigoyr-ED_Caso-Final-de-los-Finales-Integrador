@@ -1,22 +1,35 @@
 import model.*;
 import exceptions.*;
 
+import javax.swing.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 public class Main {
     public static void main(String[] args) {
-        try {
-            UserAccount sender = new UserAccount("Sender", "sender@example.com");
-            UserAccount recipient = new UserAccount("Recipient", "recipient@example.com");
+        // Create the frame
+        JFrame frame = new JFrame("Twitter");
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.setSize(500, 500);
 
-            Tweet tweet = new Tweet(sender, "This is a tweet");
-            System.out.println(tweet);
+        // Create the button
+        JButton button = new JButton("Create UserAccount");
+        button.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                try {
+                    UserAccount user = new UserAccount("Alias", "email@example.com");
+                    System.out.println(user);
+                } catch (InvalidEmailException | InvalidAliasException ex) {
+                    ex.printStackTrace();
+                }
+            }
+        });
 
-            Retweet retweet = new Retweet(sender, "This is a retweet", tweet);
-            System.out.println(retweet);
+        // Add the button to the frame
+        frame.getContentPane().add(button);
 
-            DirectMessage directMessage = new DirectMessage(sender, "This is a direct message", recipient);
-            System.out.println(directMessage);
-        } catch (TweetTooLongException | InvalidEmailException | InvalidAliasException e) {
-            e.printStackTrace();
-        }
+        // Show the frame
+        frame.setVisible(true);
     }
 }
