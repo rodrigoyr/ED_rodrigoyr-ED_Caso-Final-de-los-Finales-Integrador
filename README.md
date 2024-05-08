@@ -1,7 +1,7 @@
 # ED_rodrigoyr-ED_Caso-Final-de-los-Finales-Integrador
 
 ## Ejercicio 1
-### 1) ###
+### 1) En relación al estado de un objeto, para preservar el principio de encapsulación: ###
 **En relación al estado de un objeto, para preservar el principio de encapsulación:**
 *b)    Debemos establecer la visibilidad más restrictiva (por ejemplo, privada) en los atributos de una clase. Así, cualquier software que utilice nuestro objeto, sólo accederá al estado de los objetos mediante los métodos que le hayamos permitido utilizar.*
 
